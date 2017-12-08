@@ -1,0 +1,35 @@
+<h3>
+  Maestros de la Escuela...
+</h3>
+
+
+<body >
+
+<div class="contenedor-botones">
+  <a class="waves-effect waves-light btn"
+     ng-click="cambiarEstatus('reprobado')"
+     ng-class="estado == 'reprobado' ? 'red darken-3' : ''">
+      Maestros reprobadores
+  </a>
+  <a class="waves-effect waves-light btn"
+     ng-click="cambiarEstatus('encurso')"
+     ng-class="estado == 'encurso' ? 'red darken-3' : ''">
+      Maestros en curso</a>
+  <a class="waves-effect waves-light btn"
+     ng-click="cambiarEstatus('aprobado')"
+     ng-class="estado == 'aprobado' ? 'red darken-3' : ''">
+      Maestros Buenos
+  </a>
+  <a class="waves-effect waves-light btn"
+     ng-click="cambiarEstatus('todos')"
+     ng-class="estado == 'todos' ? 'red darken-3' : ''">
+      Todos
+  </a>
+</div>
+</body>
+
+<h4>{{estatusSeleccionado}}</h4>
+
+<h5 ng-repeat="alumno in alumnos">
+  {{alumno.nombre}}
+</h5>

@@ -1,0 +1,17 @@
+h5, h4, h3 {
+  text-align: center;
+}
+
+.contenedor-botones {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+h4 {
+  color: red;
+}
+
+
+body {background-color: rgb(153,204,255)}
